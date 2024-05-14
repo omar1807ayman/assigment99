@@ -4,7 +4,7 @@ from .forms import ProductForm
 
 
 def index(request):
-    return HttpResponse("Welcome to the Clients home page!")
+    return render(request, 'index.html')
 def add(request):
     return render(request, 'add.html')
 
